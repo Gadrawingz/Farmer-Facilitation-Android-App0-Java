@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/header_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:padding="20dp"
+                android:text="Farmer Fac.App"
+                android:background="@drawable/header_bg"/>
+        <TextView
+                android:layout_marginTop="25dp"
+                android:textColor="@color/blueShit2"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:text="Farmer Login"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_view"
+                android:orientation="vertical">
+            <include layout="@layout/layout_login"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/bottom_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Farmer App</string>
+
+    <array name="provinces">
+        <item>EAST</item>
+        <item>WEST</item>
+        <item>NORTH</item>
+        <item>SOUTH</item>
+    </array>
+
+    <array name="districts">
+        <item>HUYE</item>
+        <item>NYANZA</item>
+        <item>NYAMAGABE</item>
+        <item>NGOMA</item>
+    </array>
+
+    <array name="sectors">
+        <item>NGARAMA</item>
+        <item>TUMBA</item>
+        <item>GATSIBO</item>
+        <item>KAGEYO</item>
+    </array>
+
+    <array name="cells">
+        <item>KARAMBI</item>
+        <item>RANGO</item>
+    </array>
+
+    <array name="seeds">
+        <item>SHORT RICE</item>
+        <item>LONG RICE</item>
+        <item>KIGOLI</item>
+        <item>FOKAGURU</item>
+    </array>
+
+    <array name="villages">
+        <item>KIYOVU</item>
+        <item>GATARE</item>
+    </array>
+
+</resources>

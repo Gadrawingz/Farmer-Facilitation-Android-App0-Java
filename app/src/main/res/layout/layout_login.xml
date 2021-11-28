@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <EditText
+                android:id="@+id/textNumber"
+                android:textColor="#fff"
+                android:textColorHint="#eee"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Phone number or ID"
+                android:ems="10"
+                android:inputType="phone"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/rounded_corner"
+                android:textSize="16sp" />
+
+        <EditText
+                android:id="@+id/textPassword"
+                android:textColor="#fff"
+                android:textColorHint="#eee"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/rounded_corner"
+                android:textSize="16sp" />
+
+        <TextView
+                android:id="@+id/buttonLogin"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/button_shape"
+                android:text="Log In"
+                android:textSize="20dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="50dp"/>
+
+        <ProgressBar android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:layout_centerVertical="true"
+                     android:visibility="gone"
+                     android:id="@+id/loginLoadingPB"/>
+
+        <TextView
+                android:id="@+id/createAccount"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/blueColorC"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="10dp"
+                android:text="Create Account!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
