@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:padding="8dp">
+
+    <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="5dp"
+            android:background="@drawable/background_b1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tvHarvestType"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:id="@+id/tvQuantity"
+                android:textSize="13sp"
+                android:textColor="@color/imageRoseColor3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:id="@+id/tvPrice"
+                android:textSize="12sp"
+                android:textColor="@color/greenLess49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tvSeasonYearTerm"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:textColor="@color/blueShit2"
+                    android:background="@drawable/gradient_white2"/>
+
+            <TextView
+                    android:id="@+id/tvHarvestDate"
+                    android:textSize="13.2sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:background="@drawable/bg_white_b_rounded"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/buttonEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="0dp"
+                android:textColor="@color/white"
+                android:background="@color/blueShit1"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:text="Edit"/>
+
+        <TextView
+                android:id="@+id/buttonChecked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="0dp"
+                android:textColor="@color/white"
+                android:background="@color/greenGreener"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="Checked!"/>
+
+        <TextView
+                android:id="@+id/harvestStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="0dp"
+                android:textColor="@color/black"
+                android:background="@drawable/gradient_bluish"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -18,6 +18,7 @@ public class SharedPrefManager {
     private static final String KEY_PHONE="telephone";
     private static final String KEY_STATUS="status";
     private static final String KEY_AREA="land_area";
+    private static final String KEY_PASSWORD ="password";
 
 
     private SharedPrefManager(Context context){
@@ -43,6 +44,7 @@ public class SharedPrefManager {
         editor.putString(KEY_PHONE, farmer.getTelephone());
         editor.putString(KEY_STATUS, farmer.getStatus());
         editor.putString(KEY_AREA, farmer.getArea());
+        editor.putString(KEY_PASSWORD, farmer.getPassword());
         editor.apply();
     }
 
@@ -69,7 +71,8 @@ public class SharedPrefManager {
                 shPrefs.getString(KEY_NID, null),
                 shPrefs.getString(KEY_PHONE, null),
                 shPrefs.getString(KEY_STATUS, null),
-                shPrefs.getString(KEY_AREA, null)
+                shPrefs.getString(KEY_AREA, null),
+                shPrefs.getString(KEY_PASSWORD, null)
         );
     }
 

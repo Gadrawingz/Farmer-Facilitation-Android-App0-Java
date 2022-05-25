@@ -40,7 +40,7 @@ public class Farmer {
         this.village = village;
     }
 
-    public Farmer(int farmerId, String firstname, String lastname, String gender, String nationalId, String telephone, String status, String area) {
+    public Farmer(int farmerId, String firstname, String lastname, String gender, String nationalId, String telephone, String status, String area, String password) {
         this.farmerId = farmerId;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -49,6 +49,7 @@ public class Farmer {
         this.telephone = telephone;
         this.status = status;
         this.area = area;
+        this.password = password;
     }
 
     public int getFarmerId() {

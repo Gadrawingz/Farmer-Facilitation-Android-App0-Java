@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Finalization">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/header_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:text="@string/farmer_fac_app"
+                android:background="@drawable/header_bg"/>
+        <TextView
+                android:layout_marginTop="25dp"
+                android:textColor="@color/blueShit2"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:text="Finish Payments"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"/>
+        <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <!--Layout -->
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tvOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="5dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/blueShit1"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Add payment number"/>
+
+                    <TextView
+                            android:id="@+id/tvOneB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:textColor="@color/blueShit1"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13dp"
+                            android:textStyle="italic"
+                            android:text="If your request accepted, you are allowed to pay"/>
+
+                    <EditText
+                            android:id="@+id/paymentNo"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/blueShit1"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:hint="MTN Number"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:background="@drawable/rounded_corner_clear"
+                            android:textSize="16sp" android:autofillHints=""/>
+
+                    <TextView
+                            android:id="@+id/amountTotal"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/blueShit1"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:ems="10"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:background="@drawable/rounded_corner_clear"
+                            android:textSize="16sp" />
+
+                    <ProgressBar android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="center"
+                                 android:layout_centerHorizontal="true"
+                                 android:layout_centerVertical="true"
+                                 android:visibility="gone"
+                                 android:id="@+id/loadingProgress"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/finishButton"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold|normal"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:background="@drawable/border_bluish1"
+                                android:text="Finish"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -2,59 +2,123 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             tools:context=".Requesting">
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:layout_gravity="center"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
         <TextView
                 android:id="@+id/header_view"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="110dp"
                 android:gravity="center"
                 android:textColor="@color/blueShit1"
                 android:textStyle="bold"
-                android:textSize="25dp"
+                android:textSize="27dp"
+                android:layout_marginTop="10dp"
                 android:padding="20dp"
-                android:text="PRODUCT APPLICATION"
+                android:text="START APPLYING"
                 android:background="@drawable/header_bg_mini"/>
-        <TextView
-                android:layout_marginTop="25dp"
+
+        <!--<TextView
                 android:textColor="@color/blueShit2"
-                android:textSize="22sp"
-                android:textAlignment="center"
-                android:text="Make Seeds request"
+                android:textSize="24sp"
+                android:text="Make a Request"
+                android:layout_marginTop="5dp"
                 android:textStyle="bold"
+                android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"/>
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+        />-->
+
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/header_view"
                 android:orientation="vertical">
-
 
             <!-- Inside  layout -->
             <androidx.cardview.widget.CardView
-                    xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                 <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="300dp"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
+                    <TextView
+                            android:id="@+id/farmerLandArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/blueShit1"
+                            android:textSize="15dp"
+                            android:padding="10dp"
+                            android:gravity="center_horizontal"
+                            android:textStyle="bold"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/bluish400"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                            android:id="@+id/paidLoan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/blueShit1"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Select Payment"/>
+
+
                     <Spinner
-                            android:id="@+id/productType"
-                            android:textColor="@color/black"
-                            android:textColorHint="@color/blueShit1"
+                            android:id="@+id/paymentStatus"
+                            android:textColor="@color/blueShit1"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:ems="10"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:background="@drawable/rounded_corner_cool"
+                            android:textSize="16sp"
+                            android:entries="@array/payment_status"
+                            android:maxLines="1"/>
+
+                    <TextView
+                            android:id="@+id/S1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/bicColorB"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Select Seed"/>
+
+                    <Spinner
+                            android:id="@+id/itemSeed"
+                            android:textColor="@color/blueShit1"
                             android:paddingStart="10dp"
                             android:paddingLeft="10dp"
                             android:ems="10"
@@ -64,51 +128,251 @@
                             android:layout_marginBottom="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="?actionBarSize"
-                            android:background="@drawable/rounded_corner_cool"
+                            android:background="@drawable/rounded_corner_drop"
                             android:textSize="16sp"
-                            android:entries="@array/seeds"
                             android:maxLines="1"/>
 
                     <TextView
+                            android:id="@+id/sMinimum"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
                             android:paddingStart="10dp"
                             android:paddingLeft="10dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginRight="15dp"
                             android:textColor="@color/black"
                             android:textSize="18dp"
-                            android:textStyle="bold"
-                            android:text="Minimum Quantity is 5"/>
+                            android:textStyle="bold"/>
 
                     <EditText
-                            android:id="@+id/textQuantity"
+                            android:id="@+id/sQuantity"
                             android:textColor="@color/black"
                             android:textColorHint="@color/blueShit1"
                             android:paddingStart="10dp"
                             android:paddingLeft="10dp"
-                            android:hint="Quantity"
+                            android:hint="Seed Quantity"
                             android:inputType="numberDecimal"
                             android:layout_marginLeft="15dp"
                             android:layout_marginRight="15dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="?actionBarSize"
                             android:background="@drawable/rounded_corner_cool"
                             android:textSize="16sp"/>
 
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/bluish400"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"/>
+
+
                     <TextView
-                            android:id="@+id/buttonSend"
+                            android:id="@+id/S2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/bicColorB"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Select Fertilizer"/>
+
+                    <Spinner
+                            android:id="@+id/itemFertilizer"
+                            android:textColor="@color/blueShit1"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:ems="10"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:background="@drawable/rounded_corner_drop"
+                            android:textSize="16sp"
+                            android:maxLines="1"/>
+
+                    <TextView
+                            android:id="@+id/fMinimum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+
+                    <EditText
+                            android:id="@+id/fQuantity"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/blueShit1"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:hint="Fertilizer Quantity"
+                            android:inputType="numberDecimal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:background="@drawable/rounded_corner_cool"
+                            android:textSize="16sp"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/bluish400"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"/>
+
+
+                    <TextView
+                            android:id="@+id/S3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/bicColorB"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Select Pesticide"/>
+
+                    <Spinner
+                            android:id="@+id/itemPesticide"
+                            android:textColor="@color/blueShit1"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:ems="10"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:background="@drawable/rounded_corner_drop"
+                            android:textSize="16sp"
+                            android:maxLines="1"/>
+
+                    <TextView
+                            android:id="@+id/pMinimum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+
+                    <EditText
+                            android:id="@+id/pQuantity"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/blueShit1"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:hint="Pesticide Quantity"
+                            android:inputType="numberDecimal"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:background="@drawable/rounded_corner_cool"
+                            android:textSize="16sp"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/bluish400"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                            android:id="@+id/S4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/bicColorB"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Season Year"/>
+
+                    <EditText
+                            android:id="@+id/seasonYear"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/blueShit1"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:hint="Season.Year, Ex: 2023"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:background="@drawable/rounded_corner_clear"
+                            android:textSize="16sp"/>
+
+
+                    <TextView
+                            android:id="@+id/S5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/bicColorB"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Season Term"/>
+
+                    <EditText
+                            android:id="@+id/seasonTerm"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/blueShit1"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:hint="Season, EX:B"
+                            android:ems="10"
+                            android:inputType="textCapCharacters"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="?actionBarSize"
+                            android:background="@drawable/rounded_corner_clear"
+                            android:textSize="16sp"/>
+
+                    <TextView
+                            android:id="@+id/saveButton"
                             android:textAllCaps="false"
                             android:textColor="@color/colorWhite"
                             android:background="@drawable/button_shape"
-                            android:text="Send"
+                            android:text="Save"
                             android:textSize="20dp"
                             android:paddingRight="18dp"
                             android:paddingLeft="18dp"
                             android:gravity="center"
                             android:layout_width="150dp"
+                            android:layout_marginBottom="10dp"
                             android:layout_height="50dp"/>
 
                     <ProgressBar android:layout_width="match_parent"
@@ -119,18 +383,6 @@
                                  android:id="@+id/loginLoadingPB"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-        <LinearLayout
-                android:gravity="bottom"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            <View
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/bottom_bg_mini"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="800dp">
+        android:layout_height="wrap_content">
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,17 +45,6 @@
                 android:background="@drawable/rounded_corner"
                 android:textSize="16sp" />
 
-        <!-- Gender -->
-        <!--<TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:textColor="@color/black"
-                android:layout_gravity="center_horizontal"
-                android:textSize="16dp"
-                android:text="Farmer sex"/>-->
-
         <RadioGroup
                 android:id="@+id/radioGender"
                 android:layout_width="match_parent"
@@ -93,9 +82,9 @@
                 android:textColorHint="#eee"
                 android:paddingStart="10dp"
                 android:paddingLeft="10dp"
-                android:hint="Date of Birth"
+                android:hint="1998"
                 android:ems="10"
-                android:inputType="date"
+                android:inputType="number"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="10dp"
@@ -143,12 +132,12 @@
 
 
         <EditText
-                android:id="@+id/editTextArea"
+                android:id="@+id/editTextLandArea"
                 android:textColor="#fff"
                 android:textColorHint="#eee"
                 android:paddingStart="10dp"
                 android:paddingLeft="10dp"
-                android:hint="Area..."
+                android:hint="Area in meter square"
                 android:ems="10"
                 android:inputType="number"
                 android:layout_marginLeft="15dp"
@@ -178,9 +167,20 @@
                 android:background="@drawable/rounded_corner"
                 android:textSize="16sp" />
 
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/greenDarker"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:text="Location.."/>
+
         <Spinner
-                android:id="@+id/province"
-                android:textColor="@color/white"
+                android:id="@+id/sProvince"
+                android:textColor="@color/blueShit1"
                 android:textColorHint="#eee"
                 android:paddingStart="10dp"
                 android:paddingLeft="10dp"
@@ -191,15 +191,15 @@
                 android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
-                android:background="@drawable/rounded_corner"
+                android:background="@drawable/rounded_corner_clear"
                 android:textSize="16sp"
                 android:entries="@array/provinces"
                 android:spinnerMode="dropdown"
                 android:maxLines="1"/>
 
-        <Spinner
-                android:id="@+id/district"
-                android:textColor="@color/white"
+        <!--<Spinner
+                android:id="@+id/sDistrict"
+                android:textColor="@color/blueShit1"
                 android:textColorHint="#eee"
                 android:paddingStart="10dp"
                 android:paddingLeft="10dp"
@@ -210,26 +210,96 @@
                 android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
-                android:background="@drawable/rounded_corner"
+                android:background="@drawable/rounded_corner_clear"
                 android:textSize="16sp"
                 android:entries="@array/districts"
                 android:spinnerMode="dropdown"
-                android:maxLines="1"/>
+                android:maxLines="1"/>-->
+        <EditText
+                android:id="@+id/sDistrict"
+                android:textColor="#000000"
+                android:textColorHint="@color/blueShit1"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:hint="District..."
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/rounded_corner_clear"
+                android:textSize="16sp" />
 
+        <EditText
+                android:id="@+id/sSector"
+                android:textColor="#000000"
+                android:textColorHint="@color/blueShit1"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Sector..."
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/rounded_corner_clear"
+                android:textSize="16sp" />
+
+        <EditText
+                android:id="@+id/sCell"
+                android:textColor="#000000"
+                android:textColorHint="@color/blueShit1"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Cell..."
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/rounded_corner_clear"
+                android:textSize="16sp" />
+
+        <EditText
+                android:id="@+id/sVillage"
+                android:textColor="#000000"
+                android:textColorHint="@color/blueShit1"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:hint="Village..."
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/rounded_corner_clear"
+                android:textSize="16sp" />
 
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
             <TextView
                     android:id="@+id/registerButton"
                     android:layout_width="140dp"
                     android:layout_height="wrap_content"
-                    android:padding="2.5dp"
+                    android:padding="8dp"
                     android:layout_margin="5dp"
                     android:textColor="@color/white"
                     android:textStyle="bold|normal"
@@ -239,10 +309,10 @@
                     android:text="Register"/>
 
             <TextView
-                    android:id="@+id/buttonGoLogin"
+                    android:id="@+id/closeButton"
                     android:layout_width="140dp"
                     android:layout_height="wrap_content"
-                    android:padding="2.5dp"
+                    android:padding="8dp"
                     android:layout_margin="5dp"
                     android:textColor="@color/white"
                     android:gravity="center"
@@ -253,7 +323,7 @@
         </LinearLayout>
 
         <ProgressBar android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
+                     android:layout_height="100dp"
                      android:layout_gravity="center"
                      android:layout_centerHorizontal="true"
                      android:layout_centerVertical="true"
@@ -261,5 +331,4 @@
                      android:id="@+id/loadingProgress"/>
 
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>

@@ -22,7 +22,7 @@
                 android:text="Farmer Fac.App"
                 android:background="@drawable/header_bg"/>
         <TextView
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="15dp"
                 android:textColor="@color/blueShit2"
                 android:textSize="22sp"
                 android:textAlignment="center"

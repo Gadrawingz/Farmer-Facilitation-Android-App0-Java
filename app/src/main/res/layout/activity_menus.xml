@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".Menus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/contentBodyColor">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <!-- Department -->
+        <TextView
+                style="@style/viewParent.headerText"
+                android:layout_marginBottom="6dp"
+                android:text="Main Menus"/>
+
+        <TextView
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_classroom_pink"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/view_dashboard"
+                android:text="Dashboard"/>
+
+        <TextView
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_library_reading"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/greenLess55"
+                android:id="@+id/no_p_payment"
+                android:text="No pending payment"/>
+
+        <TextView
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_library_reading"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/reddish285"
+                android:id="@+id/pending_payment"
+                android:visibility="gone"
+                android:text="Pending Payment..."/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blueColorC"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"/>
+
+        <TextView
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:id="@+id/make_request"
+                android:text="Make a request"/>
+
+        <TextView
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_languages"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:id="@+id/register_harvest"
+                android:text="Register Harvest"/>
+
+        <TextView
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_view_eye"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:id="@+id/view_harvest"
+                android:text="View Harvests"/>
+
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/blueShit2"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+
+        <!-- More -->
+        <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="More settings"/>
+
+        <TextView
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_profile"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:id="@+id/view_profile"
+                android:text="View Profile"/>
+
+        <TextView
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_logout"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:id="@+id/user_logout"
+                android:text="Logout"/>
+
+
+    </LinearLayout>
+</ScrollView>

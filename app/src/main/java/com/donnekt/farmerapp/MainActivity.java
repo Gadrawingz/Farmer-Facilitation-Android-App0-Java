@@ -32,14 +32,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Stay to page
         if (SharedPrefManager.getInstance(this).isLoggedIn()) {
             finish();
-
-            Farmer farmer = SharedPrefManager.getInstance(this).getLoggedInFarmer();
-            String firstName = farmer.getFirstname();
-            String lastName = farmer.getLastname();
-            String telephone = farmer.getTelephone();
+            startActivity(new Intent(MainActivity.this, Dashboard.class));
         }
 
         // INITIALIZATION
@@ -49,10 +44,8 @@ public class MainActivity extends AppCompatActivity {
         editTextPhone = findViewById(R.id.textNumber);
         editTextPassword = findViewById(R.id.textPassword);
 
-
         createAccount.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,SignupActivity.class)));
-        buttonLogin.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,Dashboard.class)));
-        //buttonLogin.setOnClickListener(v -> farmerLogin());
+        buttonLogin.setOnClickListener(v -> farmerLogin());
     }
 
     private void farmerLogin() {
@@ -100,7 +93,8 @@ public class MainActivity extends AppCompatActivity {
                                 myObject.getString("national_id"),
                                 myObject.getString("telephone"),
                                 myObject.getString("status"),
-                                myObject.getString("land_area")
+                                myObject.getString("land_area"),
+                                myObject.getString("password")
                         );
 
                         // Store Preferences
@@ -114,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-        }, error -> Toast.makeText(MainActivity.this, "NETWORK PROBLEM", Toast.LENGTH_LONG).show()) {
+        }, error -> Toast.makeText(MainActivity.this, "Network Problem Occurred!", Toast.LENGTH_LONG).show()) {
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<>();

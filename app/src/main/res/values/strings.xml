@@ -1,31 +1,9 @@
 <resources>
     <string name="app_name">Farmer App</string>
-
-    <array name="provinces">
-        <item>EAST</item>
-        <item>WEST</item>
-        <item>NORTH</item>
-        <item>SOUTH</item>
-    </array>
-
-    <array name="districts">
-        <item>HUYE</item>
-        <item>NYANZA</item>
-        <item>NYAMAGABE</item>
-        <item>NGOMA</item>
-    </array>
-
-    <array name="sectors">
-        <item>NGARAMA</item>
-        <item>TUMBA</item>
-        <item>GATSIBO</item>
-        <item>KAGEYO</item>
-    </array>
-
-    <array name="cells">
-        <item>KARAMBI</item>
-        <item>RANGO</item>
-    </array>
+    <string name="farmer_fac_app">Farmer Fac.App</string>
+    <string name="register_harvest">Register Harvest</string>
+    <string name="update_harvest">Update Single Harvest</string>
+    <string name="update_profile">Update Profile Info+</string>
 
     <array name="seeds">
         <item>SHORT RICE</item>
@@ -34,9 +12,94 @@
         <item>FOKAGURU</item>
     </array>
 
+    <array name="payment_status">
+        <item>PAID</item>
+        <item>LOAN</item>
+    </array>
+
+    <array name="provinces">
+        <item>EAST</item>
+        <item>WEST</item>
+        <item>NORTH</item>
+        <item>SOUTH</item>
+        <item>KIGALI CITY</item>
+    </array>
+
+    <array name="districts">
+        <item>HUYE</item>
+        <item>NYANZA</item>
+        <item>MUHANGA</item>
+        <item>RUHANGO</item>
+        <item>NYAMAGABE</item>
+        <item>NGOMA</item>
+        <item>KAYONZA</item>
+        <item>NYAGATARE</item>
+        <item>BURERA</item>
+        <item>KAMONYI</item>
+        <item>KICUKIRO</item>
+        <item>GASAB0</item>
+        <item>NYARUGENGE</item>
+        <item>GATSIBO</item>
+        <item>NYAGATARE</item>
+        <item>RWAMAGANA</item>
+        <item>KAYONZA</item>
+        <item>KIREHE</item>
+        <item>BUGESERA</item>
+        <item>MUSANZE</item>
+        <item>BURERA</item>
+        <item>RUBAVU</item>
+
+    </array>
+
+    <array name="sectors">
+        <item>NGARAMA</item>
+        <item>TUMBA</item>
+        <item>GATSIBO</item>
+        <item>KABARORE</item>
+        <item>RANGO</item>
+        <item>MUHURA</item>
+        <item>GAHINGA</item>
+        <item>MUHURA</item>
+        <item>MUKAMIRA</item>
+    </array>
+
+    <array name="cells">
+        <item>KARAMBI</item>
+        <item>NGARAMA</item>
+        <item>RANGO A</item>
+        <item>RANGO B</item>
+        <item>TUMBA</item>
+        <item>KIGEME</item>
+    </array>
+
     <array name="villages">
         <item>KIYOVU</item>
         <item>GATARE</item>
+        <item>AMAHORO</item>
+        <item>IBARE</item>
+        <item>KABEHO</item>
+        <item>KIBONDO</item>
+        <item>UMUCYO</item>
+    </array>
+
+    <array name="season_years">
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+    </array>
+
+    <array name="season_terms">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
     </array>
 
 </resources>
