@@ -21,8 +21,8 @@ public class SignupActivity extends AppCompatActivity {
     EditText editTextFName, editTextLName, editTextDOB, editTextNID, editTextPhone, editTextLandArea, editTextPassword;
     RadioGroup radioGroupGender;
 
-    Spinner sProvince;
-    EditText sDistrict, sSector, sCell, sVillage;
+    Spinner sProvince, sDistrict;
+    EditText sSector, sCell, sVillage;
     ProgressBar loadingProgBar;
     TextView registerButton, closeButton;
 
@@ -47,6 +47,7 @@ public class SignupActivity extends AppCompatActivity {
         sVillage = findViewById(R.id.sVillage);
         registerButton = findViewById(R.id.registerButton);
         closeButton = findViewById(R.id.closeButton);
+
         //SharedPrefManager.getInstance(getApplicationContext()).logout();
         //startActivity(new Intent(SignupActivity.this, MainActivity.class));
 
@@ -55,7 +56,7 @@ public class SignupActivity extends AppCompatActivity {
         closeButton.setOnClickListener(v -> startActivity(new Intent(SignupActivity.this, MainActivity.class)));
     }
 
-    // my real quick function
+    // My real quick function
     private void registerData() {
         final String fFName = editTextFName.getText().toString().trim();
         final String fLName = editTextLName.getText().toString().trim();
@@ -67,33 +68,33 @@ public class SignupActivity extends AppCompatActivity {
         final String fPass = editTextPassword.getText().toString().trim();
         final String fArea = editTextLandArea.getText().toString().trim();
         final String sProv = sProvince.getSelectedItem().toString();
+        final String sDist = sDistrict.getSelectedItem().toString();
 
         /*
-        final String sDist = sDistrict.getSelectedItem().toString();
         final String sSect = sSector.getSelectedItem().toString();
         final String sCel0 = sCell.getSelectedItem().toString();
-        final String sVil0 = sVillage.getSelectedItem().toString();*/
+        final String sVil0 = sVillage.getSelectedItem().toString();
+        */
 
-        final String sDist = sDistrict.getText().toString().trim();
         final String sSect = sSector.getText().toString().trim();
         final String sCel0 = sCell.getText().toString().trim();
         final String sVil0 = sVillage.getText().toString().trim();
 
         //first we will do the validations
         if (TextUtils.isEmpty(fFName)) {
-            editTextFName.setError("Please enter firstname");
+            editTextFName.setError("Please enter Firstname");
             editTextFName.requestFocus();
             return;
         }
 
         if (TextUtils.isEmpty(fLName)) {
-            editTextFName.setError("Please enter lastname");
+            editTextFName.setError("Please enter Lastname");
             editTextFName.requestFocus();
             return;
         }
 
         if (TextUtils.isEmpty(fPhone)) {
-            editTextPhone.setError("Please enter telephone");
+            editTextPhone.setError("Please enter Telephone");
             editTextPhone.requestFocus();
             return;
         }
@@ -105,13 +106,31 @@ public class SignupActivity extends AppCompatActivity {
         }
 
         if((fNatId).length() != 16) {
-            editTextNID.setError("Valid ID should have 16 numbers!");
+            editTextNID.setError("National ID must have 16 numbers!");
             editTextNID.requestFocus();
             return;
         }
 
         if (TextUtils.isEmpty(fNatId)) {
-            editTextNID.setError("Please enter your National ID");
+            editTextNID.setError("Please enter National ID");
+            editTextNID.requestFocus();
+            return;
+        }
+
+        if (TextUtils.isEmpty(sSect)) {
+            editTextNID.setError("Please enter Sector");
+            editTextNID.requestFocus();
+            return;
+        }
+
+        if (TextUtils.isEmpty(sCel0)) {
+            editTextNID.setError("Please enter Cell");
+            editTextNID.requestFocus();
+            return;
+        }
+
+        if (TextUtils.isEmpty(sVil0)) {
+            editTextNID.setError("Please enter Village");
             editTextNID.requestFocus();
             return;
         }
@@ -123,12 +142,12 @@ public class SignupActivity extends AppCompatActivity {
         }
 
         if (TextUtils.isEmpty(fPass)) {
-            editTextPassword.setError("Enter a password");
+            editTextPassword.setError("Enter new Password!");
             editTextPassword.requestFocus();
             return;
         }
 
-        // Finalize operation!
+        /* Pass all data process them! */
         transferDataByVolley(fFName, fLName, SGender, fDoB, fNatId, fPhone, fPass, fArea, sProv, sDist, sSect, sCel0, sVil0);
     }
 
@@ -140,7 +159,6 @@ public class SignupActivity extends AppCompatActivity {
                 JSONObject jsonObject = new JSONObject(response);
                 Toast.makeText(SignupActivity.this, jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(SignupActivity.this, MainActivity.class));
-                //emptyEditTextAfterInsertion();
             } catch (JSONException e) {
                 e.printStackTrace();
             }

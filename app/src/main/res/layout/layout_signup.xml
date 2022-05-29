@@ -197,7 +197,7 @@
                 android:spinnerMode="dropdown"
                 android:maxLines="1"/>
 
-        <!--<Spinner
+        <Spinner
                 android:id="@+id/sDistrict"
                 android:textColor="@color/blueShit1"
                 android:textColorHint="#eee"
@@ -214,24 +214,7 @@
                 android:textSize="16sp"
                 android:entries="@array/districts"
                 android:spinnerMode="dropdown"
-                android:maxLines="1"/>-->
-        <EditText
-                android:id="@+id/sDistrict"
-                android:textColor="#000000"
-                android:textColorHint="@color/blueShit1"
-                android:paddingStart="10dp"
-                android:paddingLeft="10dp"
-                android:hint="District..."
-                android:ems="10"
-                android:inputType="text"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="?actionBarSize"
-                android:background="@drawable/rounded_corner_clear"
-                android:textSize="16sp" />
+                android:maxLines="1"/>
 
         <EditText
                 android:id="@+id/sSector"

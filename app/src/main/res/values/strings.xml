@@ -26,29 +26,43 @@
     </array>
 
     <array name="districts">
-        <item>HUYE</item>
-        <item>NYANZA</item>
-        <item>MUHANGA</item>
-        <item>RUHANGO</item>
-        <item>NYAMAGABE</item>
-        <item>NGOMA</item>
-        <item>KAYONZA</item>
-        <item>NYAGATARE</item>
-        <item>BURERA</item>
-        <item>KAMONYI</item>
         <item>KICUKIRO</item>
         <item>GASAB0</item>
         <item>NYARUGENGE</item>
-        <item>GATSIBO</item>
+
+        <item>GISAGARA</item>
+        <item>HUYE</item>
+        <item>KAMONYI</item>
+        <item>MUHANGA</item>
+        <item>NYAMAGABE</item>
+        <item>NYANZA</item>
+        <item>NYARUGURU</item>
+        <item>RUHANGO</item>
+
+        <item>KARONGI</item>
+        <item>NGORORERO</item>
+        <item>NYABIHU</item>
+        <item>NYAMASHEKE</item>
+        <item>RUBAVU</item>
+        <item>RUSIZI</item>
+        <item>RUTSIRO</item>
+
+        <item>NGOMA</item>
+        <item>KAYONZA</item>
         <item>NYAGATARE</item>
-        <item>RWAMAGANA</item>
+
+        <item>BURERA</item>
+        <item>GAKENKE</item>
+        <item>GICUMBI</item>
+        <item>MUSANZE</item>
+        <item>RULINDO</item>
+        <item>BUGESERA</item>
+        <item>GATSIBO</item>
         <item>KAYONZA</item>
         <item>KIREHE</item>
-        <item>BUGESERA</item>
-        <item>MUSANZE</item>
-        <item>BURERA</item>
-        <item>RUBAVU</item>
-
+        <item>NGOMA</item>
+        <item>NYAGATARE</item>
+        <item>RWAMAGANA</item>
     </array>
 
     <array name="sectors">

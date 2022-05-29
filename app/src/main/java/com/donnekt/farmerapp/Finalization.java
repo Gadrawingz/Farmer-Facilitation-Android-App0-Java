@@ -122,8 +122,8 @@ public class Finalization extends AppCompatActivity implements View.OnClickListe
                         try {
                             isDataLoading.setVisibility(View.GONE);
                             JSONObject jsonObject = new JSONObject(response);
-                            Toast.makeText(Finalization.this, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
                             startActivity(new Intent(Finalization.this, Dashboard.class));
+                            Toast.makeText(Finalization.this, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

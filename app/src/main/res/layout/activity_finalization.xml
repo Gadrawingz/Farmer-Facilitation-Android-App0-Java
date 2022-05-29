@@ -24,11 +24,11 @@
                 android:text="@string/farmer_fac_app"
                 android:background="@drawable/header_bg"/>
         <TextView
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="18dp"
                 android:textColor="@color/blueShit2"
                 android:textSize="22sp"
                 android:textAlignment="center"
-                android:text="Finish Payments"
+                android:text="Finish Payment"
                 android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -54,9 +54,9 @@
                             android:id="@+id/tvOne"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:paddingTop="10dp"
+                            android:paddingTop="5dp"
                             android:paddingBottom="5dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="5dp"
                             android:textColor="@color/blueShit1"
                             android:layout_marginLeft="10dp"
                             android:textSize="18dp"
@@ -94,6 +94,20 @@
                             android:layout_height="?actionBarSize"
                             android:background="@drawable/rounded_corner_clear"
                             android:textSize="16sp" android:autofillHints=""/>
+
+
+                    <TextView
+                            android:id="@+id/tvOne3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/blueShit1"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Total Amount (rwf) to pay"/>
 
                     <TextView
                             android:id="@+id/amountTotal"
